@@ -1,0 +1,32 @@
+{
+  "name": "framer",
+  "version": "0.0.1",
+  "description": "Screen size emulator",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "jsnext:main": "dist/esm/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection:main": "dist/collection/index.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "unpkg": "dist/framer/framer.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.12.7"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/throttle-debounce": "^2.1.0",
+    "throttle-debounce": "^2.1.0"
+  }
+}
